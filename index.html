@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Base, always build this before diving into the site -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Cristian's very first survey-form site! </title> 
+  <link rel="stylesheet" href="styles.css"> <!-- This makes it so CSS works -->
+    
+	<body>
+      <h1 id="title"> Cristian's very first survey-form site! </h1>
+      <p id="description"> This is my very first attempt at coding, let me know what you think of it! </p>
+    
+	<div class="form-container"> </div>  <!-- "<div>" is used for containers and to keep the code clean -->
+    <form id="survey-form"> <!-- Form elements i.e inputs/dropdowns etc -->
+     
+	<div class="input-group">
+      <label for="name" id="name-label">Insert your name:</label>
+      <input id="name" type="text" placeholder="Name" required>
+    </div>
+    
+	<div class="input-group"> 
+      <label for="email" id="email-label">Insert your email:</label>
+      <input id="email" type="email" placeholder="example@email.com" required>
+    </div>
+        
+	<div class="number-group"> 
+      <label for="number" id="number-label">From 1 to 5, what would you rate this project?</label>
+      <input id="number" type="number" min="1" max="5" placeholder="1 to 5" class="number">
+    </div>
+	
+    <div class="dropdown-container">
+      <label for="dropdown" id="dropdown-label"></label>Was the gradient background a nice addition?
+    <select id="dropdown" class="dropdown">
+      <option value="1">Yes, it was</option>
+      <option value="2">No, it wasn't</option>
+    </select>
+    </div>
+    
+	<div class="input-group">
+      <label for="option1" id="radios-label"></label> Left?
+      <input id="option1" type="radio" name="1-2" value="1" class="inline" checked>
+      <label for="option2" id="radios-group" ></label> Right?
+      <input id="option2" type="radio" name="1-2" value="2" class="inline">
+	</div>  
+	  
+    <div class="checkbox-container">	
+      <label id="checkbox-label"></label>
+      <input id="option-1" type="checkbox" name="Option" value="option 1" class="inline" checked>Don't know
+      <input id="option-2" type="checkbox" name="Option" value="option 2" class="inline" >What to 
+      <input id="option-3" type="checkbox" name="Option" value="option 3" class="inline" >Put in
+      <input id="option-4" type="checkbox" name="Option" value="option 4" class="inline" >This section
+    </div>
+    
+	<div class="textarea-container">
+      <label for="additional-comments" id="textarea-group">Write fun stuff here:</label>
+    </div> 
+	
+    <textarea id="additional-comments" name="additional comments" rows="3" cols="30" class="textarea" placeholder="I REALLY like pizza..."></textarea>
+    <div class="submit-container">
+      <label for="submit" id="submit-label"></label>
+      <input id="submit" type="submit" value="Submit"> <!-- To create a "Submit" button -->
+    </div>
+    </form>
+</head>
+    </body>
